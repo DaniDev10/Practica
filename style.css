@@ -1,0 +1,42 @@
+header{
+    background: black;
+    margin: 0;
+    box-sizing: border-box;
+}
+#img1{
+    width: 200px;
+    filter: grayscale(50%);
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: blue;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: 1ms;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: grey;
+    color: white;
+}

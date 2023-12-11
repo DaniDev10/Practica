@@ -18,25 +18,82 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
     font-weight: bold;
 }
-nav ul li a::before{
+nav ul li a::after{
     display: block;
     content: '';
     width: 0%;
-    background: blue;
-    height: 5px;
+    background: gray;
+    height: 3px;
     top: 0;
-    position: absolute;
+    position: relative;
     transition: 1ms;
 }
-nav ul li a:hover::before{
+nav ul li a:hover::after{
     width: 100%;
 }
 body {
     margin: 0;
     padding: 0;
     background: grey;
-    color: white;
+    color: black;
+}
+article{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#primero{
+    background-color: white;
+}
+section h1{
+    font-size: 32px;
+    padding: 50px;
+    margin: 0;
+}
+section p{
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+#segundo{
+    padding: 50px;
+    background-color: white;
+    line-height: 30px;
+}
+.google{
+    width: 250px;
+    height: auto;
+    margin: 20px;
+}
+.partner{
+    width: 200px;
+    margin: 20px;
+}
+#tercero{
+    padding: 50px;
+    background: grey;
+}
+#cuarto{
+    background: white;
+}
+.portafolio{
+    width: 500px;
+}
+.desarrollo{
+    float: right;
+    margin: 20px;
+    width: 330px;
+}
+.prueba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.prueba2{
+    display: flex;
+    justify-content: center;
 }

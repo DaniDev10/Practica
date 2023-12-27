@@ -1,99 +1,142 @@
-header{
-    background: black;
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: #222;
     margin: 0;
-    box-sizing: border-box;
 }
-#img1{
-    width: 200px;
-    filter: grayscale(50%);
+h1{
+    font-size: 1.8em;
+    line-height: 1.8em;
 }
-nav{
-    float: right;
+p{
+    margin-bottom: 2rem;
 }
-nav ul li{
-    list-style: none;
-    margin-left: 20px;
-    float: left;
-    position: relative;
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
 }
-nav ul li a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: bold;
-}
-nav ul li a::after{
-    display: block;
-    content: '';
-    width: 0%;
-    background: gray;
-    height: 3px;
+
+
+.header{
+    background: #222;
+    padding: 0.5rem;
+
+    position: fixed;
+    left: 0;
     top: 0;
-    position: relative;
-    transition: 1ms;
-}
-nav ul li a:hover::after{
     width: 100%;
 }
-body {
+main{
+    padding: 5rem;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.navegation ul{
     margin: 0;
     padding: 0;
-    background: grey;
-    color: black;
+    list-style: none;
 }
-article{
+.logo_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    letter-spacing: 1rem;
+    font-size: 2.8rem;
+}
+.navegation ul li{
+    display: inline-block;
+}
+.navegation ul li a{
+    display: block;
+    margin: 0;
+    padding: 1rem 0.5rem;
+    transition: all 0.5s linear;
+    border-radius: 1rem;
+}
+.navegation ul li a:hover{
+    background: white;
+    color: #222;
+}
+.footer{
     text-align: center;
-    padding: 0;
-    margin: 0;
+    background: white;
+    color: #222;
+    padding: 0.5rem 0;
+    font-size: 18px;
 }
-#primero{
-    background-color: white;
+.imagen1{
+    display: flex;
+    justify-content: center;
 }
-section h1{
-    font-size: 32px;
-    padding: 50px;
-    margin: 0;
-}
-section p{
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
-}
-#segundo{
-    padding: 50px;
-    background-color: white;
-    line-height: 30px;
+img{
+    width: auto;
+    height: 200px;
+    object-fit: contain;
 }
 .google{
-    width: 250px;
-    height: auto;
-    margin: 20px;
+    padding-right: 30px;
 }
-.partner{
-    width: 200px;
-    margin: 20px;
+.certification{
+    padding-left: 30px;
 }
-#tercero{
-    padding: 50px;
-    background: grey;
-}
-#cuarto{
-    background: white;
-}
-.portafolio{
-    width: 500px;
-}
-.desarrollo{
-    float: right;
-    margin: 20px;
-    width: 330px;
-}
-.prueba{
+.imagen2{
     display: flex;
+    margin-top: 4rem;
+    align-items: center;
+}
+.imagen2 p{
+    text-align: center;
+}
+.imagen2 img{
+    height: 250px;
+    width: auto;
+    margin-left: 3rem;
+}
+.container-textimg{
+    display: flex;
+    gap: 2rem;
+    /* flex-direction: column; */
+}
+.hijo1, .hijo2{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    
+    /* gap: 7.8rem; */
 }
-.prueba2{
-    display: flex;
-    justify-content: center;
+.hijo1 img, .hijo2 img{
+    width: 250px;
+    height: 200px;
+}
+
+
+/*
+@media only screen and (max-width: 767px){
+    .navegation{
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+    .navegation ul li{
+        display: block;
+    }
+    .navegation ul li a{
+        display: block;
+        margin: 0;
+        padding: 1rem 0.5rem;
+        transition: all 0.5s linear;
+        border-radius: 1rem;
+    }
+    .navegation ul li a:hover{
+        background: black;
+        color: white;
+    }
 }
